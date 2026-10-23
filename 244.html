@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de incidencia</title>
+</head>
+<body>
+  <h1>Formulario de incidencia</h1>
+  <form action="incidencia.php" method="get">
+
+    <fieldset>
+      <legend>Datos del usuario</legend>
+      <p>
+        <label for="usuario">Usuario que remite la incidencia:</label>
+        <input type="text" id="usuario" name="usuario" size="40"
+               placeholder="Introduce Nombre y Apellidos">
+      </p>
+      <p>
+        Tipo de usuario:
+        <input type="radio" id="alumno" name="tipo_usuario" value="alumno" checked>
+        <label for="alumno">Alumno</label>
+        <input type="radio" id="profesor" name="tipo_usuario" value="profesor">
+        <label for="profesor">Profesor</label>
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Dónde se produce</legend>
+      <p>
+        Lugar:
+        <input type="radio" id="lugar_dep" name="lugar" value="departamento">
+        <label for="lugar_dep">Todo el departamento</label>
+        <input type="radio" id="lugar_aula" name="lugar" value="aula">
+        <label for="lugar_aula">Todo el aula</label>
+        <input type="radio" id="lugar_equipo" name="lugar" value="equipo" checked>
+        <label for="lugar_equipo">Sólo en un equipo</label>
+      </p>
+      <p>
+        <label for="detalle_lugar">Nombre del departamento, número de aula o nombre del equipo:</label>
+        <input type="text" id="detalle_lugar" name="detalle_lugar" size="30">
+      </p>
+    </fieldset>
+
+    <fieldset>
